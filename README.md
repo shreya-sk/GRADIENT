@@ -6,7 +6,7 @@
 
 **GRADIENT** (Gradient Reversal And Domain-Invariant Extraction Networks for Triplets) is a unified framework for cross-domain implicit sentiment detection in Aspect-Based Sentiment Analysis (ABSA).
 
-📄 **Paper**: [Accepted at Journal of Intelligent Information Systems (JIIS), Springer 2025]
+📄 **Paper**: [Submitted at Journal of Intelligent Information Systems (JIIS), Springer 2025]
 
 ## 🎯 Key Features
 
