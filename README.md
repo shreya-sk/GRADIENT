@@ -10,20 +10,20 @@
 📄 **Paper**: Under review at Journal of Intelligent Information Systems (JIIS), Springer 2025
 
 
-## 🎯 Overview
+## Overview
 
 GRADIENT addresses two critical challenges in Aspect-Based Sentiment Analysis:
 1. **Implicit Sentiment Detection**: Handles sentiment expressions without explicit lexical indicators (temporal comparisons, conditional statements, evaluative constructs)
 2. **Cross-Domain Transfer**: Enables robust performance across different domains without target-domain training data
 
-## 🚀 Key Contributions
+## Key Contributions
 
 - **First unified architecture** combining multi-granularity implicit aspect detection with span-level opinion extraction
 - **Novel application** of domain adversarial training with gradient reversal to fine-grained ABSA triplet extraction
 - **Multi-scale processing innovation** through Grid Tagging Matrix (GM-GTM) and Span-level Contextual Interaction Network (SCI-Net)
 - **Comprehensive cross-domain evaluation** across 6 domain transfer pairs with 2.3× better retention than baselines
 
-## 📊 Performance Highlights
+## Performance Highlights
 
 ### Single-Domain Performance (Triplet F1)
 | Dataset | REST14 | REST15 | REST16 | LAP14 | Average |
@@ -125,7 +125,7 @@ pip install -r requirements.txt
 - NumPy, Pandas, Scikit-learn
 - Weights & Biases (optional, for experiment tracking)
 
-## 💻 Quick Start
+## Quick Start
 
 ### Training
 ```bash
@@ -182,7 +182,7 @@ print(triplets)
 # ]
 ```
 
-## 📁 Project Structure
+## Project Structure
 ```
 GRADIENT/
 ├── data/                          # Dataset files and loaders
@@ -216,7 +216,7 @@ GRADIENT/
 └── README.md
 ```
 
-## 📊 Datasets
+## Datasets
 
 We evaluate on four standard SemEval ABSA benchmarks:
 
@@ -232,11 +232,10 @@ We evaluate on four standard SemEval ABSA benchmarks:
 bash scripts/download_data.sh
 ```
 
-## 🧪 Reproducibility
+## Reproducibility
 
 All experiments are conducted with:
 - **Random seeds**: [42, 123, 456, 789, 2024]
-- **Hardware**: NVIDIA V100 GPU (32GB)
 - **Reported metrics**: Mean ± SD over 5 runs
 - **Hyperparameters**: Grid search on REST16 validation set
 
@@ -253,7 +252,7 @@ lambda_domain: 0.0 → 0.1 (progressive)
 lambda_orth: 0.1
 ```
 
-## 🔬 Ablation Study Results
+## Ablation Study Results
 
 | Component | Contribution | Consistency |
 |-----------|--------------|-------------|
@@ -265,7 +264,7 @@ lambda_orth: 0.1
 
 **Key Finding**: Different components show domain-specific vs. universal benefits, challenging assumptions about architectural improvements.
 
-## 📈 Computational Efficiency
+## Computational Efficiency
 
 | Metric | GRADIENT | RoBERTa Baseline | Overhead |
 |--------|----------|------------------|----------|
@@ -277,22 +276,27 @@ lambda_orth: 0.1
 
 **Value Proposition**: +15% overhead for +4.2 F1 single-domain gain and 2.3× cross-domain improvement.
 
-## 🎯 Use Cases
+## Use Cases
 
 GRADIENT is particularly effective for:
 
 ✅ **Multi-domain sentiment analysis systems** requiring consistent performance
+
 ✅ **Applications with limited target-domain labeled data** (transfer learning scenarios)
+
 ✅ **Review analysis platforms** (e-commerce, hospitality, electronics)
+
 ✅ **Social media monitoring** with implicit sentiment expressions
+
 ✅ **Enterprise feedback systems** across multiple product lines
+
 
 ⚠️ **Exercise caution for**:
 - Extreme domain shifts (e.g., medical ↔ social media)
 - Real-time applications requiring <50ms latency
 - Resource-constrained environments (<3GB GPU memory)
 
-## 📖 Citation
+## Citation
 
 If you find this work useful, please cite:
 ```bibtex
@@ -305,7 +309,7 @@ If you find this work useful, please cite:
 }
 ```
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Areas for potential contributions:
 - Additional implicit pattern detectors
